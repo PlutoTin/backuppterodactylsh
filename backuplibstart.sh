@@ -10,23 +10,23 @@ clear
 
 
 backupwd(){
-    cd /var/lib/pterodactyl || exit
+    cd /var/www/pterodactyl || exit
     php artisan down
     cd /var/lib/ || exit
     tar -czvf backup.tar.gz /var/lib/pterodactyl
-    cd /var/lib/pterodactyl || exit
+    cd /var/www/pterodactyl || exit
     php artisan up
      cd /var/lib/pterodactyl/../../.. || exit
 }
 
 
 restorewd(){
-    cd /var/lib/pterodactyl || exit
+    cd /var/www/pterodactyl || exit
     php artisan down 
     cd /var/lib/ || exit 
     tar -xzvf backup.tar.gz -C /var/lib
     cd /var/lib/../.. || exit 
-    cd /var/lib/pterodactyl || exit 
+    cd /var/www/pterodactyl || exit 
     php artisan up
     cd /var/lib/pterodactyl/../../.. || exit
 }
@@ -51,7 +51,7 @@ restorewod(){
 
 
 backuplocal(){
-    cd /var/lib/pterodactyl || exit
+    cd /var/www/pterodactyl || exit
     php artisan down
     read -p "Please enter the IP address: " ip_address
     read -p "Please enter the download location: " download_location
@@ -61,7 +61,7 @@ backuplocal(){
 
 
 backuptargzlocal(){
-    cd /var/lib/pterodactyl || exit
+    cd /var/www/pterodactyl || exit
     php artisan down
     read -p "Please enter the IP address: " ip_address
     read -p "Please enter the download location: " download_location
