@@ -14,7 +14,7 @@ backupwd(){
     tar -czvf backup.tar.gz /var/lib/pterodactyl
     cd /var/www/pterodactyl || exit
     php artisan up
-     cd /var/lib/pterodactyl/../../.. || exit
+    cd /var/lib/pterodactyl/../../.. || exit
 }
 
 restorewd(){
