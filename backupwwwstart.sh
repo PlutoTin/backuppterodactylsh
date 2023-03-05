@@ -65,7 +65,7 @@ backuptargzlocal(){
 }
 
 
-echo "Becareful this is a test project"
+echo "Becareful this is a test project (/var/www/pterodactyl)"
 echo " "
 echo "[1] Backup with panel down"
 echo "[2] Restore with panel down"
