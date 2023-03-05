@@ -1,7 +1,13 @@
-# backuppterodactylsh
+# Backup pterodactyl .sh
 
-This is a test project, it may have so many bugs.
-⚠️ Warn : IT HAVE MANY BUGS
+## This is a test project.
+##⚠️ Warn : IT HAVE MANY BUGS
+
+Chooseable /var/www/pterodactyl and /var/lib/pterodactyl
+
+```
+bash <(curl https://raw.githubusercontent.com/PlutoTin/backuppterodactylsh/main/backupstart.sh)
+```
 
 If you want to backup /var/www/pterodactyl use this (I just tested partly)
 
