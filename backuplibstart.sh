@@ -5,9 +5,7 @@ if (( $EUID != 0 )); then
     exit
 fi
 
-
 clear
-
 
 backupwd(){
     cd /var/www/pterodactyl || exit
