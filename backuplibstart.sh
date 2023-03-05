@@ -55,7 +55,7 @@ backuptargzlocal(){
     rm backuplocal.tar.gz
     php artisan up
 }
-echo "Becareful this is a test project"
+echo "Becareful this is a test project (/var/lib/pterodactyl)"
 echo " "
 echo "[1] Backup with panel down"
 echo "[2] Restore with panel down"
