@@ -71,7 +71,6 @@ backuptargzlocal(){
 
 
 
-
 echo "Becareful this is a test project"
 echo " "
 echo "[1] Backup with panel down"
@@ -82,9 +81,7 @@ echo "[5] Backup local in computer (download)"
 echo "[6] Backup local in computer (zip and download)"
 echo "[7] Exit"
 
-
 read -p "Please enter a number: " choice
-
 
 if [ "$choice" == "1" ]
 then
