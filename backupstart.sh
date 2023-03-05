@@ -64,6 +64,9 @@ backuptargzlocal(){
     php artisan up
 }
 
+
+echo "Becareful this is a test project"
+echo " "
 echo "[1] Backup with panel down"
 echo "[2] Restore with panel down"
 echo "[3] Backup without panel down"
