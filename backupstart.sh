@@ -11,7 +11,13 @@ clear
 
 
 backupwd(){
-    cd /var/www/pterodactyl && php artisan down && cd /var/www/ && tar -czvf backup.tar.gz /var/www/pterodactyl && cd /var/www/pterodactyl && php artisan up && cd /var/www/pterodactyl/../../..
+    cd /var/www/pterodactyl
+    php artisan down
+    cd /var/www/
+    tar -czvf backup.tar.gz /var/www/pterodactyl
+    cd /var/www/pterodactyl
+    php artisan up
+     cd /var/www/pterodactyl/../../..
 }
 
 
