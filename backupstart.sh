@@ -1,29 +1,38 @@
 ﻿#!/bin/bash
 
 
-backupwd() {
+if (( $EUID != 0 )); then
+    echo "Please run as root"
+    exit
+fi
+
+
+clear
+
+
+backupwd(){
     cd /var/www/pterodactyl && php artisan down && cd /var/www/ && tar -czvf backup.tar.gz /var/www/pterodactyl && cd /var/www/pterodactyl && php artisan up && cd /var/www/pterodactyl/../../..
 }
 
 
-restorewd() {
+restorewd(){
     cd /var/www/pterodactyl && php artisan down && cd /var/www/ && tar -xzvf backup.tar.gz -C /var/www && cd /var/www/../.. && cd /var/www/pterodactyl && php artisan up && cd /var/www/pterodactyl/../../..
 }
 
 
 
 
-backupwod() {
+backupwod(){
     cd /var/www/pterodactyl && cd /var/www/ && tar -czvf backup.tar.gz /var/www/pterodactyl && cd /var/www/pterodactyl && cd /var/www/pterodactyl/../../..
 }
 
 
-restorewod() {
+restorewod(){
     cd /var/www/pterodactyl && cd /var/www/ && tar -xzvf backup.tar.gz -C /var/www && cd /var/www/../.. && cd /var/www/pterodactyl && cd /var/www/pterodactyl/../../..
 }
 
 
-backuplocal() {
+backuplocal(){
     cd /var/www/pterodactyl
     php artisan down
     read -p "Please enter the IP address: " ip_address
@@ -33,7 +42,7 @@ backuplocal() {
 }
 
 
-backuptargzlocal() {
+backuptargzlocal(){
     cd /var/www/pterodactyl
     php artisan down
     read -p "Please enter the IP address: " ip_address
