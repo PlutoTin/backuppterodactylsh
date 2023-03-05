@@ -1,7 +1,7 @@
 # Backup pterodactyl .sh
 
 ## This is a test project.
-##⚠️ Warn : IT HAVE MANY BUGS
+## ⚠️ Warn : IT HAVE MANY BUGS
 
 Chooseable /var/www/pterodactyl and /var/lib/pterodactyl
 
