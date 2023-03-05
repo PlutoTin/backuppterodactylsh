@@ -17,7 +17,6 @@ backupwd(){
      cd /var/lib/pterodactyl/../../.. || exit
 }
 
-
 restorewd(){
     cd /var/www/pterodactyl || exit
     php artisan down 
@@ -29,7 +28,6 @@ restorewd(){
     cd /var/lib/pterodactyl/../../.. || exit
 }
 
-
 backupwod(){
     cd /var/lib/pterodactyl || exit 
     cd /var/lib/ || exit 
@@ -37,7 +35,6 @@ backupwod(){
     cd /var/lib/pterodactyl || exit 
     cd /var/lib/pterodactyl/../../.. || exit
 }
-
 
 restorewod(){
     cd /var/lib/pterodactyl && cd /var/lib/ || exit 
@@ -47,7 +44,6 @@ restorewod(){
     cd /var/lib/pterodactyl/../../.. || exit
 }
 
-
 backuplocal(){
     cd /var/www/pterodactyl || exit
     php artisan down
@@ -56,7 +52,6 @@ backuplocal(){
     scp -r root@"$ip_address":/var/lib/pterodactyl "$download_location"
     php artisan up
 }
-
 
 backuptargzlocal(){
     cd /var/www/pterodactyl || exit
@@ -68,8 +63,6 @@ backuptargzlocal(){
     rm backuplocal.tar.gz
     php artisan up
 }
-
-
 
 echo "Becareful this is a test project"
 echo " "
