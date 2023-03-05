@@ -9,8 +9,8 @@
 bash <(curl https://raw.githubusercontent.com/PlutoTin/backuppterodactylsh/main/backupstart.sh)
 ```
 
-# This is the same as chooseable one but less one UI
-# So use the first (1.) is enough
+### This is the same as chooseable one but less one UI
+### So use the first (1.) is enough
 
 2. If you want to backup /var/www/pterodactyl use this (I just tested partly)
 
