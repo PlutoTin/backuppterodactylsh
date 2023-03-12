@@ -21,6 +21,7 @@ read -p "Please enter a number: " choice
 if [ "$choice" == "0" ]
 then
     helpingtools
+fi
 if [ "$choice" == "1" ]
 then
     varwww
