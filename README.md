@@ -15,10 +15,10 @@ bash <(curl https://raw.githubusercontent.com/PlutoTin/backuppterodactylsh/main/
 2. If you want to backup /var/www/pterodactyl use this (I just tested partly)
 
 ```
-bash <(curl https://raw.githubusercontent.com/PlutoTin/backuppterodactylsh/main/backupwwwstart.sh)
+bash <(curl https://raw.githubusercontent.com/PlutoTin/backuppterodactylsh/main/www/backupwwwstart.sh)
 ```
 3. If you want to backup /var/lib/pterodactyl use this (I didn't test this before)(Warn: Pls close panel unless you can't use the function)
 
 ```
-bash <(curl https://raw.githubusercontent.com/PlutoTin/backuppterodactylsh/main/backuplibstart.sh)
+bash <(curl https://raw.githubusercontent.com/PlutoTin/backuppterodactylsh/main/lib/backuplibstart.sh)
 ```
