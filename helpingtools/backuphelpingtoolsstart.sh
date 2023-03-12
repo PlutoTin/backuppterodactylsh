@@ -8,15 +8,15 @@ fi
 clear
 
 panelup(){
-cd /var/www/pterodactyl
+cd /var/www/pterodactyl || exit
 php artisan up
-cd /var/www/pterodactyl/../../..
+cd /var/www/pterodactyl/../../.. || exit
 }
 
 paneldown(){
-cd /var/www/pterodactyl
+cd /var/www/pterodactyl || exit
 php artisan down
-cd /var/www/pterodactyl/../../..
+cd /var/www/pterodactyl/../../.. || exit
 }
 
 back(){
