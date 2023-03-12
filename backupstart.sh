@@ -5,10 +5,10 @@ if (( $EUID != 0 )); then
 fi
 clear
 varwww(){
-bash <(curl https://raw.githubusercontent.com/PlutoTin/backuppterodactylsh/main/backupwwwstart.sh)
+bash <(curl https://raw.githubusercontent.com/PlutoTin/backuppterodactylsh/main/www/backupwwwstart.sh)
 }
 varlib(){
-bash <(curl https://raw.githubusercontent.com/PlutoTin/backuppterodactylsh/main/backuplibstart.sh)
+bash <(curl https://raw.githubusercontent.com/PlutoTin/backuppterodactylsh/main/lib/backuplibstart.sh)
 }
 echo "[1] Backup or restore /var/www/pterodactyl"
 echo "[2] Backup or restore /var/lib/pterodactyl"
