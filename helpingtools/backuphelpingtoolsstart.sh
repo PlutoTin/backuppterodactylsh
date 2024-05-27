@@ -19,6 +19,10 @@ php artisan down
 cd /var/www/pterodactyl/../../.. || exit
 }
 
+autorepair(){
+bash <(curl https://github.com/PlutoTin/backuppterodactylsh/blob/main/helpingtools/repair
+}
+
 back(){
 bash <(curl https://raw.githubusercontent.com/PlutoTin/backuppterodactylsh/main/backupstart.sh)
 }
@@ -27,8 +31,9 @@ echo "Becareful this is a test project (/var/www/pterodactyl)"
 echo " "
 echo "[1] Pterodactyl panel up"
 echo "[2] Pterodactyl panel down"
-echo "[3] Go back"
-echo "[4] Exit"
+echo "[3] Auto Repair"
+echo "[4] Go back"
+echo "[5] Exit"
 
 read -p "Please enter a number: " choice
 
@@ -42,12 +47,17 @@ then
     paneldown
 fi
 
-if [ "$choice" == "3" ]
+if [ "$choice" == "3"]
+then
+    
+fi
+
+if [ "$choice" == "4" ]
 then
     back
 fi
 
-if [ "$choice" == "4" ]
+if [ "$choice" == "5" ]
 then
     exit
 fi
