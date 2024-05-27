@@ -49,7 +49,7 @@ fi
 
 if [ "$choice" == "3"]
 then
-    
+    autorepair
 fi
 
 if [ "$choice" == "4" ]
