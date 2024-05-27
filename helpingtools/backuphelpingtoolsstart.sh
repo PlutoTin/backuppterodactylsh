@@ -20,7 +20,7 @@ cd /var/www/pterodactyl/../../.. || exit
 }
 
 autorepair(){
-bash <(curl https://github.com/PlutoTin/backuppterodactylsh/blob/main/helpingtools/repair
+bash <(curl https://github.com/PlutoTin/backuppterodactylsh/blob/main/helpingtools/repair)
 }
 
 back(){
